@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page HTML CSS | Codehal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <!--LOGIN-->
+        <form id="login-form" class="active">
+            <h2>Login</h2>            
+            <div class="input-group">
+                <span class="icon"><ion-icon name="person"></ion-icon></span>
+                <input type="text" placeholder="username" required>
+            </div>
+            <div class="input-group">
+                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                <input type="password" placeholder="password" required>
+            </div>
+            <div class="forgot-pass">
+                <a href="#" id="show-recuperar"> ¿Olvidaste tu contraseña?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            
+             <!--INICIAR SESION USANDO REDES SOCIALES-->
+            <div class="social-login">
+               <a href="https://accounts.google.com/" target="_blank" class="google"><ion-icon name="logo-google"></ion-icon></a>
+               <a href="https://www.facebook.com/login/" target="_blank" class="facebook"><ion-icon name="logo-facebook"></ion-icon></a>
+               <a href="https://github.com/login" target="_blank" class="github"><ion-icon name="logo-github"></ion-icon></a>    
+               <a href="https://twitter.com/i/flow/login" target="_blank" class="twitter"><ion-icon name="logo-twitter"></ion-icon></a>
+            </div>
+
+            <div class="sign-link">
+                <p>¿No tienes una cuenta? <a href="#" id="show-registrar">Registrate</a></p>
+            </div>  
+            <div class="sign-link">
+                <p>Cambiar contraseña <a href="#" id="show-cambiar">Click Aquí</a></p>
+            </div>       
+            <div class="sign-link">
+                <p>Recuperar contraseña <a href="#" id="show-recuperar2">Click Aquí</a></p>
+            </div>       
+        </form>
+
+
+        <!--REGISTRAR-->
+        <form id="registrar-form">
+            <h2>Registrar</h2>            
+            <div class="input-group">
+                <span class="icon"><ion-icon name="person-add"></ion-icon></span>
+                <input type="text" placeholder="Nuevo usuario" required>
+            </div>
+            <div class="input-group">
+                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                <input type="email" placeholder="Correo electrónico" required>
+            </div>
+            <div class="input-group">
+                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                <input type="password" placeholder="Contraseña" required>
+            </div>
+            <button type="submit" class="btn">Crear cuenta</button>
+            <div class="sign-link">
+                <p>¿Ya tienes una cuenta? <a href="#" id="back-login1">Regresar al Login</a></p>
+            </div>
+        </form>
+
+
+        <!--CAMBIAR CONTRASEÑA-->
+        <form id="cambiar-form">
+            <h2>Cambiar contraseña</h2>            
+            <div class="input-group">
+                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                <input type="email" placeholder="Correo registrado" required>
+            </div>
+            <div class="input-group">
+                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                <input type="password" placeholder="Contraseña actual" required>
+            </div>
+            <div class="input-group">
+                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                <input type="password" placeholder="Nueva contraseña" required>
+            </div>
+            <button type="submit" class="btn">Actualizar</button>
+            <div class="sign-link">
+                <p>¿Quieres volver? <a href="#" id="back-login2">Regresar al Login</a></p>
+            </div>
+        </form>
+
+
+        <!--RECUPERAR CONTRASEÑA-->
+        <form id="recuperar-form">
+            <h2>Recuperar contraseña</h2>            
+            <div class="input-group">
+                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                <input type="email" placeholder="Correo registrado" required>
+            </div>
+            <button type="submit" class="btn">Enviar enlace</button>
+            <div class="sign-link">
+                <p><a href="#" id="back-login3">Regresar al Login</a></p>
+            </div>
+        </form>
+    </div>
+
+
+    <!--ICONOS-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> 
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!--SCRIPT-->
+    <script src="script.js"></script>
+</body>
+</html>
